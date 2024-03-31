@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: git
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/AzerArfa/config-server.git
+          username: AzerArfa
+          password: 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
+          default-label: main
